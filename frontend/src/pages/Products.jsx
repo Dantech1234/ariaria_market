@@ -5,18 +5,20 @@ function Products() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://your-backend-url.onrender.com/api/products") // Replace with your Render backend URL
+    fetch("https://your-backend-url.onrender.com/api/products") // replace with your Render URL
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.log(err));
   }, []);
 
   return (
-    <div>
+    <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">All Products</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {products.length > 0 ? (
-          products.map((product) => <ProductCard key={product.id} product={product} />)
+          products.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))
         ) : (
           <p>Loading products...</p>
         )}
