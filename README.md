@@ -1,2 +1,2 @@
-# ariaria_market
+# ariaria_marketplace
 A place for quality shoes 
