@@ -1,8 +1,8 @@
 // Placeholder model
-const userModel = {
+const productModel = {
   id: 1,
-  name: "Sample User",
-  email: "user@example.com",
+  name: "Sample Product",
+  price: 1000,
 };
 
-module.exports = userModel;
+module.exports = productModel;
