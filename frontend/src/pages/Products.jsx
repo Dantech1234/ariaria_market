@@ -5,7 +5,7 @@ function Products() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://your-backend-url.onrender.com/api/products") // replace with your Render URL
+    fetch("https://ariaria-backend.onrender.com/api/products") // replace with your Render URL
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.log(err));
